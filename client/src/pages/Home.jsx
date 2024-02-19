@@ -90,17 +90,25 @@ export const Home = () => {
           </section>
         </section>
       </main>
-
-      {/* Redes */}
-      <a target='_blank' href='https://facebook.com'>
-        <FaSquareFacebook />
-      </a>
-      <a target='_blank' href='https://instagram.com'>
-        <TiSocialInstagram />
-      </a>
-      <a target='_blank' href='https://tiktok.com'>
-        <BiLogoTiktok />
-      </a>
+      <footer id='contacto'>
+        <div className='contenedor footer-content'>
+          <div className='contact-us'>
+            <h2 className='brand'>Candy Pony</h2>
+            <p>Somos expertos en la creación de tu evento</p>
+          </div>
+          <div className='social-media'>
+            <a href='./' className='social-media-icon'>
+              <FaSquareFacebook />
+            </a>
+            <a href='./' className='social-media-icon'>
+              <TiSocialInstagram />
+            </a>
+            <a href='./' className='social-media-icon'>
+              <BiLogoTiktok />
+            </a>
+          </div>
+        </div>
+      </footer>
     </>
   );
 };

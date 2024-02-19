@@ -1,5 +1,5 @@
 /* Import Poppins font */
-@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,400;0,600;1,200&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,400;0,600;1,200&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 /* Tailwind CSS */
 @tailwind base;
@@ -7,12 +7,16 @@
 @tailwind utilities;
 
 * {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 /* Navbar */
 nav.bg-white {
-  background: linear-gradient(180deg, rgba(255, 112, 255, 0.207), rgba(255, 122, 184, 0.535));
+  background: linear-gradient(
+    180deg,
+    rgba(255, 112, 255, 0.207),
+    rgba(255, 122, 184, 0.535)
+  );
   backdrop-filter: blur(2px);
   width: 100%;
 }
@@ -27,27 +31,24 @@ div.block.py-2.pr-4.pl-3.border-b.border-gray-100:hover {
 
 div.block.py-2.pr-4.pl-3.border-b.border-gray-100 {
   border-bottom: none;
-  opacity: .8;
-  ;
-
+  opacity: 0.8;
 }
 
 .link-custom-color {
-  color: rgb(225, 0, 255);
-  transition: .2s all ease-out;
+  color: rgb(249, 62, 255);
+  transition: 0.2s all ease-out;
   font-size: 17px;
 }
 
-
 .link-custom-color:hover {
-  opacity: .7;
+  opacity: 0.7;
 }
 
 .link-activo {
-  color: #6c02d7;
+  color: #d002d7;
   font-weight: bold;
   padding: 5px;
-  transition: all .2 ease-in-out;
+  transition: all 0.2 ease-in-out;
   border-radius: 10px;
 }
 
