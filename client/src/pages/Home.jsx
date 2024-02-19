@@ -1,18 +1,15 @@
 import { FaSquareFacebook } from "react-icons/fa6";
 import { TiSocialInstagram } from "react-icons/ti";
 import { BiLogoTiktok } from "react-icons/bi";
-import { Button, Card } from "flowbite-react";
 /* img */
 import minnie from "../assets/minnie.jpeg";
-import sophia from "../assets/princesa.jpeg";
-import dragon from "../assets/dragon.jpeg";
 import cars from "../assets/cars.jpeg";
-import maya from "../assets/maya.jpeg";
 import vaca from "../assets/vacalola.jpeg";
-import pool from "../assets/pool.jpeg";
+import sophia from "../assets/princesa.jpeg";
 import spiderman from "../assets/spiderman.jpg";
 import roblox from "../assets/roblox.jpeg";
-import { IoClose } from "react-icons/io5";
+import niños from "../assets/niños.png";
+/* import { IoClose } from "react-icons/io5"; */
 
 export const Home = () => {
   return (
@@ -24,73 +21,56 @@ export const Home = () => {
           <p className='copy'>Convertimos tus sueños en realidad</p>
         </div>
       </header>
+      {/* Comienzo de Main */}
       <main>
         {/* Servicios */}
-        <h3>Algunos de nuestros servicios...</h3>
-        <div className='servicios flex flex-wrap flex-row'>
-          {/* Card de servicios | 1*/}
-          <Card
-            className='max-w-sm'
-            imgSrc={minnie}
-            imgAlt='Evento de Minnie Mouse'
-            horizontal
-          >
-            <h5 className='text-2xl font-bold tracking-tight text-gray-900 dark:text-white'>
-              Evento de Minnie Mouse
-            </h5>
-            <p className='font-normal text-gray-700 dark:text-gray-400'>
-              Here are the biggest enterprise technology acquisitions of 2021 so
-              far, in reverse chronological order.
-            </p>
-            <Button gradientDuoTone='purpleToPink' outline fill>
-              <a href='#'> Seguir leyendo</a>
-            </Button>
-          </Card>
-          {/* Card de servicios | 2*/}
-          <Card
-            className='max-w-sm'
-            imgSrc={sophia}
-            imgAlt='Evento de la princes Sophia'
-            horizontal
-          >
-            <h5 className='text-2xl font-bold tracking-tight text-gray-900 dark:text-white'>
-              Evento de la princesa Sophia
-            </h5>
-            <p className='font-normal text-gray-700 dark:text-gray-400'>
-              Here are the biggest enterprise technology acquisitions of 2021 so
-              far, in reverse chronological order.
-            </p>
-            <Button gradientDuoTone='purpleToPink' outline fill>
-              <a href='#'> Seguir leyendo</a>
-            </Button>
-          </Card>
-          {/* Card de servicios | 3*/}
-          <Card
-            className='max-w-sm'
-            imgSrc={dragon}
-            imgAlt='Evento de entrenando a mi dragón'
-            horizontal
-          >
-            <h5 className='text-2xl font-bold tracking-tight text-gray-900 dark:text-white'>
-              Evento de entrenando a mi dragón
-            </h5>
-            <p className='font-normal text-gray-700 dark:text-gray-400'>
-              Here are the biggest enterprise technology acquisitions of 2021 so
-              far, in reverse chronological order.
-            </p>
-            <Button gradientDuoTone='purpleToPink' outline fill>
-              <a href='#'> Seguir leyendo</a>
-            </Button>
-          </Card>
-        </div>
+        <section className='services contenedor' id='servicio'>
+          <h2 className='subtitulo'>Nuestro Servicio</h2>
+          <div className='contenedor-servicio'>
+            <img src={niños} alt='Imagen de Niño en Cumpleaños animada' />
+            <div className='checklist-servicio'>
+              <div className='service'>
+                <h3 className='n-service'>
+                  <span className='number'>1</span>Eventos de cumpleaños
+                </h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
+                  aliquam consequatur excepturi sit facere accusamus tenetur,
+                  sapiente dolorum sequi consectetur.
+                </p>
+              </div>
+              <div className='service'>
+                <h3 className='n-service'>
+                  <span className='number'>2</span>Stand de Glitter
+                </h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
+                  aliquam consequatur excepturi sit facere accusamus tenetur,
+                  sapiente dolorum sequi consectetur.
+                </p>
+              </div>
+              <div className='service'>
+                <h3 className='n-service'>
+                  <span className='number'>3</span>Sublimados
+                </h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
+                  aliquam consequatur excepturi sit facere accusamus tenetur,
+                  sapiente dolorum sequi consectetur.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
         <section className='gallery' id='portafolio'>
           <div className='contenedor'>
             <h2 className='subtitulo'>Galeria</h2>
             <div className='contenedor-galeria'>
               <img src={cars} alt='Cars' className='img-galeria' />
-              <img src={maya} alt='Maya y el Oso' className='img-galeria' />
+              <img src={minnie} alt='Maya y el Oso' className='img-galeria' />
               <img src={vaca} alt='Vaca lola' className='img-galeria' />
-              <img src={pool} alt='Pool Party' className='img-galeria' />
+              <img src={sophia} alt='Pool Party' className='img-galeria' />
               <img src={spiderman} alt='Spiderman' className='img-galeria' />
               <img src={roblox} alt='Roblox' className='img-galeria' />
             </div>
@@ -100,6 +80,15 @@ export const Home = () => {
           <IoClose className='close' />
           <img src='' alt='' className='agregar-imagen' />
         </section> */}
+        <section className='contenedor' id='expertos'>
+          <h2 className='subtitulo'>Expertos en:</h2>
+          <section className='experts'>
+            <div className='cont-experts'>
+              <img src='' alt='' />
+              <h3 className='n-expert'>Creatividad</h3>
+            </div>
+          </section>
+        </section>
       </main>
 
       {/* Redes */}
