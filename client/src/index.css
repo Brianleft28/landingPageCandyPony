@@ -12,13 +12,8 @@
 
 /* Navbar */
 nav.bg-white {
-  background: linear-gradient(
-    180deg,
-    rgba(255, 112, 255, 0.207),
-    rgba(255, 122, 184, 0.535)
-  );
-  backdrop-filter: blur(2px);
   width: 100%;
+  background-image: linear-gradient(120deg, #fccb90 0%, #d57eeb 100%);
 }
 
 li {
@@ -58,4 +53,22 @@ div.block.py-2.pr-4.pl-3.border-b.border-gray-100 {
   justify-content: center;
   gap: 15px;
   background-color: #6c02d7;
+}
+
+.contenedor {
+  width: 90%;
+  max-width: 1300px;
+  overflow: hidden;
+  margin: 0 auto;
+  padding: 10px 0;
+}
+
+.header {
+  height: 100vh;
+  background-image: linear-gradient(
+    to top,
+    #ff9a9e 0%,
+    #fecfef 99%,
+    #fecfef 100%
+  );
 }

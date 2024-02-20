@@ -61,32 +61,32 @@ export const Home = () => {
               </div>
             </div>
           </div>
-        </section>
 
-        <section className='gallery' id='portafolio'>
-          <div className='contenedor'>
-            <h2 className='subtitulo'>Galeria</h2>
-            <div className='contenedor-galeria'>
-              <img src={cars} alt='Cars' className='img-galeria' />
-              <img src={minnie} alt='Maya y el Oso' className='img-galeria' />
-              <img src={vaca} alt='Vaca lola' className='img-galeria' />
-              <img src={sophia} alt='Pool Party' className='img-galeria' />
-              <img src={spiderman} alt='Spiderman' className='img-galeria' />
-              <img src={roblox} alt='Roblox' className='img-galeria' />
+          <section className='gallery' id='portafolio'>
+            <div className='contenedor'>
+              <h2 className='subtitulo'>Galeria</h2>
+              <div className='contenedor-galeria'>
+                <img src={cars} alt='Cars' className='img-galeria' />
+                <img src={minnie} alt='Maya y el Oso' className='img-galeria' />
+                <img src={vaca} alt='Vaca lola' className='img-galeria' />
+                <img src={sophia} alt='Pool Party' className='img-galeria' />
+                <img src={spiderman} alt='Spiderman' className='img-galeria' />
+                <img src={roblox} alt='Roblox' className='img-galeria' />
+              </div>
             </div>
-          </div>
-        </section>
-        {/*  <section className='imagen-light'>
+          </section>
+          {/*  <section className='imagen-light'>
           <IoClose className='close' />
           <img src='' alt='' className='agregar-imagen' />
         </section> */}
-        <section className='contenedor' id='expertos'>
-          <h2 className='subtitulo'>Expertos en:</h2>
-          <section className='experts'>
-            <div className='cont-experts'>
-              <img src='' alt='' />
-              <h3 className='n-expert'>Creatividad</h3>
-            </div>
+          <section className='contenedor' id='expertos'>
+            <h2 className='subtitulo'>Expertos en:</h2>
+            <section className='experts'>
+              <div className='cont-experts'>
+                <img src='' alt='' />
+                <h3 className='n-expert'>Creatividad</h3>
+              </div>
+            </section>
           </section>
         </section>
       </main>
