@@ -8,7 +8,7 @@ import { Services } from "./pages/Services.jsx";
 import { Shop } from "./pages/Shop.jsx";
 import { Signin } from "./pages/Signin.jsx";
 import { Register } from "./pages/Register.jsx";
-
+import { Footer } from "./components/Footer.jsx";
 function App() {
   return (
     <>
@@ -23,6 +23,7 @@ function App() {
           <Route path='/signin' element={<Signin />} />
           <Route path='/register' element={<Register />} />
         </Routes>
+        <Footer />
       </Router>
     </>
   );

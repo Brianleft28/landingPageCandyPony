@@ -1,6 +1,3 @@
-import { FaSquareFacebook } from "react-icons/fa6";
-import { TiSocialInstagram } from "react-icons/ti";
-import { BiLogoTiktok } from "react-icons/bi";
 /* img */
 import minnie from "../assets/minnie.jpeg";
 import cars from "../assets/cars.jpeg";
@@ -14,6 +11,7 @@ import { IoClose } from "react-icons/io5";
 import economia from "../assets/economia.png";
 import logistica from "../assets/logistica.png";
 import creatividad from "../assets/creatividad.png";
+import { Service } from "../components/Service";
 export const Home = () => {
   return (
     <>
@@ -27,44 +25,35 @@ export const Home = () => {
       {/* Comienzo de Main */}
       <main>
         {/* Servicios */}
-        <sectcion className='contenedor' id='servicio'>
+        <section className='contenedor' id='servicio'>
           <h2 className='subtitulo'>Nuestro Servicio</h2>
           <div className='contenedor-servicio'>
             <img src={niños} alt='Imagen de Niño en Cumpleaños animada' />
             <div className='checklist-servicio'>
-              <div className='service'>
-                <h3 className='n-service'>
-                  <span className='number'>1</span> Eventos de cumpleaños
-                </h3>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
-                  aliquam consequatur excepturi sit facere accusamus tenetur,
-                  sapiente dolorum sequi consectetur.
-                </p>
-              </div>
-              <div className='service'>
-                <h3 className='n-service'>
-                  <span className='number'>2</span> Stand de Glitter
-                </h3>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
-                  aliquam consequatur excepturi sit facere accusamus tenetur,
-                  sapiente dolorum sequi consectetur.
-                </p>
-              </div>
-              <div className='service'>
-                <h3 className='n-service'>
-                  <span className='number'>3</span> Sublimados
-                </h3>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
-                  aliquam consequatur excepturi sit facere accusamus tenetur,
-                  sapiente dolorum sequi consectetur.
-                </p>
-              </div>
+              <Service
+                p={
+                  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo aliquam consequatur excepturi sit facere accusamus tenetur, sapiente dolorum sequi consectetur."
+                }
+                number={"1"}
+                h3={"Eventos"}
+              />
+              <Service
+                p={
+                  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo aliquam consequatur excepturi sit facere accusamus tenetur, sapiente dolorum sequi consectetur."
+                }
+                number={"2"}
+                h3={"Stand de Glitter"}
+              />
+              <Service
+                p={
+                  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo aliquam consequatur excepturi sit facere accusamus tenetur, sapiente dolorum sequi consectetur."
+                }
+                number={"3"}
+                h3={"Sublimados"}
+              />
             </div>
           </div>
-
+          {/* Galeria */}
           <section className='gallery' id='portafolio'>
             <div className='contenedor'>
               <h2 className='subtitulo'>Galeria</h2>
@@ -83,7 +72,7 @@ export const Home = () => {
             <IoClose color='white' className='close' />
             <img src={cars} alt='asd' className='agregar-imagen' />
           </section>
-
+          {/* Expertos en */}
           <section className='contenedor' id='expertos'>
             <h2 className='subtitulo'>Expertos en:</h2>
             <section className='experts'>
@@ -101,29 +90,8 @@ export const Home = () => {
               </div>
             </section>
           </section>
-        </sectcion>
+        </section>
       </main>
-
-      <footer id='contacto'>
-        <div className='contenedor footer-content'>
-          <div className='contact-us'>
-            <h2 className='brand font-semibold'>Candy Pony</h2>
-            <p>Somos expertos en la creación de tu evento</p>
-          </div>
-          <div className='social-media'>
-            <a href='./' className='social-media-icon'>
-              <FaSquareFacebook />
-            </a>
-            <a href='./' className='social-media-icon'>
-              <TiSocialInstagram />
-            </a>
-            <a href='./' className='social-media-icon'>
-              <BiLogoTiktok />
-            </a>
-          </div>
-        </div>
-        <div className='line'></div>
-      </footer>
     </>
   );
 };

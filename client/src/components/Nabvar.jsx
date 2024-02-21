@@ -39,16 +39,7 @@ function Nabvar() {
             Sobre nosotros
           </Link>
         </Navbar.Link>
-        <Navbar.Link as={"div"}>
-          <Link
-            className={`link-custom-color ${
-              path === "/shop" ? "link-activo" : ""
-            }`}
-            to='/shop'
-          >
-            Tienda
-          </Link>
-        </Navbar.Link>
+
         <Navbar.Link as={"div"}>
           <Link
             className={`link-custom-color ${
