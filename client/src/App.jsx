@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
-import Nabvar from "./components/Nabvar.jsx";
+import Nav from "./components/Navbar/Navbar.jsx";
 import { Home } from "./pages/Home.jsx";
 import { About } from "./pages/About.jsx";
 import { Contact } from "./pages/Contact.jsx";
@@ -8,12 +8,13 @@ import { Services } from "./pages/Services.jsx";
 import { Shop } from "./pages/Shop.jsx";
 import { Signin } from "./pages/Signin.jsx";
 import { Register } from "./pages/Register.jsx";
-import { Footer } from "./components/Footer.jsx";
+import { Footerr } from "./components/Footer.jsx";
+
 function App() {
   return (
     <>
       <Router>
-        <Nabvar />
+        <Nav />
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/about' element={<About />} />
@@ -23,7 +24,7 @@ function App() {
           <Route path='/signin' element={<Signin />} />
           <Route path='/register' element={<Register />} />
         </Routes>
-        <Footer />
+        <Footerr />
       </Router>
     </>
   );

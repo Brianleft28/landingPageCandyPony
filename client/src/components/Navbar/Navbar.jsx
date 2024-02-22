@@ -1,8 +1,8 @@
-import { Button, Navbar } from "flowbite-react";
 import { Link, useLocation } from "react-router-dom";
-import logo from "../assets/candylogo.png";
+import logo from "../../assets/candylogo.png";
+import { Button, Navbar } from "flowbite-react";
 
-function Nabvar() {
+function Navbarr() {
   const path = useLocation().pathname;
   return (
     <Navbar fluid rounded>
@@ -39,7 +39,16 @@ function Nabvar() {
             Sobre nosotros
           </Link>
         </Navbar.Link>
-
+        <Navbar.Link as={"div"}>
+          <Link
+            className={`link-custom-color ${
+              path === "/shop" ? "link-activo" : ""
+            }`}
+            to='/shop'
+          >
+            Tienda
+          </Link>
+        </Navbar.Link>
         <Navbar.Link as={"div"}>
           <Link
             className={`link-custom-color ${
@@ -70,4 +79,5 @@ function Nabvar() {
     </Navbar>
   );
 }
-export default Nabvar;
+
+export default Navbarr;

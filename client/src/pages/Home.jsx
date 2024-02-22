@@ -12,6 +12,7 @@ import economia from "../assets/economia.png";
 import logistica from "../assets/logistica.png";
 import creatividad from "../assets/creatividad.png";
 import { Service } from "../components/Service";
+
 export const Home = () => {
   return (
     <>

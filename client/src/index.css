@@ -6,10 +6,6 @@
 @tailwind components;
 @tailwind utilities;
 
-* {
-  font-family: "Poppins", sans-serif;
-}
-
 /* Navbar */
 nav.bg-white {
   background-image: linear-gradient(
@@ -30,17 +26,14 @@ nav.bg-white {
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
 }
 
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+/* Navbar */
+
 li {
   padding: 5px;
-}
-
-div.block.py-2.pr-4.pl-3.border-b.border-gray-100:hover {
-  color: #000;
-}
-
-div.block.py-2.pr-4.pl-3.border-b.border-gray-100 {
-  border-bottom: none;
-  opacity: 0.8;
 }
 
 .link-custom-color {
